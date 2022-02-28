@@ -16,5 +16,19 @@ namespace TotoGUI
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Length == 14)
+            {
+                checkBox1.Checked = false;
+
+            }
+            else
+            {
+                checkBox1.Checked = true;
+            }
+            checkBox1.Text = $"Nem megfelelö karakterek széma ({textBox1.Text.Length})";
+        }
     }
 }

@@ -52,6 +52,7 @@ namespace TotoGUI
             this.textBox1.Size = new System.Drawing.Size(171, 20);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "12X12X12X12X12";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // checkBox1
             // 
